@@ -132,7 +132,7 @@ if(isset($_POST['submit'])){
     );
     $payload = json_encode($data);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'h_api_key:e7e486b6a627a27fa938c8c8cbb12e47ca15bfdf915a63df28483980a5dc117f'));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'h_api_key:PUT YOU API HERE'));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $result = json_encode(curl_exec($ch));
     echo $result;
